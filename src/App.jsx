@@ -13,6 +13,7 @@ import hall4Img from "./assets/hall4.jpg";
 import Review from "./Review";
 import Utilities from "./Utilities";
 import ImageGallery from "./ImageGallery";
+import Contact from "./components/Contact";
 
 const ROOMSLIDES = [room1Img, room2Img, room3Img, room4Img];
 const HALLSLIDES = [hall1Img, hall2Img, hall3Img, hall4Img];
@@ -33,6 +34,7 @@ function App() {
         subtext="Every detail is thoughtfully arranged to make your stay smooth, secure, and stress-free"
       />
       <ImageGallery />
+      <Contact />
     </>
   );
 }
