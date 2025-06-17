@@ -1,0 +1,220 @@
+[
+    {
+        "id": 1,
+        "name": "Suite",
+        "description": "Your Standard Stay",
+        "price": "N16,000 Per Night",
+        "tagline": "More than a Room",
+        "tagline-description": "Comfort meets simplicity. Our Standard Room offers everything you need for a peaceful stay — clean, cozy, and budget-friendly without compromising quality.",
+        "amenities": [
+            {
+                "King Size Bed": "fluent:bed-24-regular"
+            },
+            {
+                "Room Service": "material-symbols:room-service-outline"
+            },
+            {
+                "Fully Air Conditioned": "mingcute:air-condition-open-line"
+            }
+            {
+                "Study Table": "lucide-lab:desk-lamp"
+            },
+            {
+                "35inch Flat Screen TV": "ic:outline-tv"
+            }
+        ],
+        "gallery": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Executive Suite",
+        "description": "Your Standard Stay",
+        "price": "N18,000 Per Night",
+        "tagline": "Luxury, Privacy, and Peace of Mind - All in One",
+        "tagline-description": "A step up in space and style. The Deluxe Room gives you extra comfort, elegant furnishing, and a relaxed ambiance for both work and rest.",
+        "amenities": [
+            {
+                "King Size Bed": "fluent:bed-24-regular"
+            },
+            {
+                "Room Service": "material-symbols:room-service-outline"
+            },
+            {
+                "Fully Air Conditioned": "mingcute:air-condition-open-line"
+            }
+            {
+                "Study Table": "lucide-lab:desk-lamp"
+            },
+            {
+                "35inch Flat Screen TV": "ic:outline-tv"
+            }
+        ],
+        "gallery": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Standard",
+        "description": "Your Standard Stay",
+        "price": "N16,000 Per Night",
+        "tagline": "Everything You Need for a Peaceful Night’s Rest",
+        "tagline-description": "Designed for travelers who love a little more room. The Luxury Double features spacious bedding, refined decor, and the perfect atmosphere for couples or solo guests wanting extra comfort.",
+        "amenities": [
+            {
+                "King Size Bed": "fluent:bed-24-regular"
+            },
+            {
+                "Room Service": "material-symbols:room-service-outline"
+            },
+            {
+                "Fully Air Conditioned": "mingcute:air-condition-open-line"
+            }
+            {
+                "Study Table": "lucide-lab:desk-lamp"
+            },
+            {
+                "35inch Flat Screen TV": "ic:outline-tv"
+            }
+        ],
+        "gallery": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Luxury Double",
+        "description": "Your Standard Stay",
+        "price": "N32,000 Per Night",
+        "tagline": "Spacious Comfort for Two, or Just for You",
+        "tagline-description": "Experience more than a room — enjoy a private suite that offers a living area, elegant furnishings, and an elevated sense of space and privacy for extended stays or special visits.",
+        "amenities": [
+            {
+                "King Size Bed": "fluent:bed-24-regular"
+            },
+            {
+                "Room Service": "material-symbols:room-service-outline"
+            },
+            {
+                "Fully Air Conditioned": "mingcute:air-condition-open-line"
+            }
+            {
+                "Study Table": "lucide-lab:desk-lamp"
+            },
+            {
+                "35inch Flat Screen TV": "ic:outline-tv"
+            }
+        ],
+        "gallery": [image1, image2, image3, image4
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Deluxe",
+        "description": "Your Standard Stay",
+        "price": "N35,000 Per Night",
+        "tagline": "Designed for Comfort, Styled for Ease",
+        "tagline-description": "Our finest offering. The Executive Suite is tailored for distinguished guests who desire luxury, tranquility, and class — complete with a separate lounge, refined décor, and top-tier amenities.",
+        "amenities": [
+            {
+                "King Size Bed": "fluent:bed-24-regular"
+            },
+            {
+                "Room Service": "material-symbols:room-service-outline"
+            },
+            {
+                "Fully Air Conditioned": "mingcute:air-condition-open-line"
+            }
+            {
+                "Study Table": "lucide-lab:desk-lamp"
+            },
+            {
+                "35inch Flat Screen TV": "ic:outline-tv"
+            }
+        ],
+        "gallery": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Deluxe",
+        "description": "Your Standard Stay",
+        "price": "N35,000 Per Night",
+        "tagline": "Designed for Comfort, Styled for Ease",
+        "tagline-description": "Our finest offering. The Executive Suite is tailored for distinguished guests who desire luxury, tranquility, and class — complete with a separate lounge, refined décor, and top-tier amenities.",
+        "amenities": [
+            {
+                "King Size Bed": "fluent:bed-24-regular"
+            },
+            {
+                "Room Service": "material-symbols:room-service-outline"
+            },
+            {
+                "Fully Air Conditioned": "mingcute:air-condition-open-line"
+            }
+            {
+                "Study Table": "lucide-lab:desk-lamp"
+            },
+            {
+                "35inch Flat Screen TV": "ic:outline-tv"
+            }
+        ],
+        "gallery": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Computer Center",
+        "tagline": "Empowering Minds through Modern Tools",
+        "tagline-description": "Our fully equipped ICT Centre is designed for training, workshops, and research. Whether you're hosting a digital skills seminar or facilitating online courses, our 50-capacity tech-friendly hall offers fast internet, modern systems, and a conducive learning environment.",
+        "gallery": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Event Hall",
+        "tagline": "Where Every Event Finds its Perfect Stage",
+        "tagline-description": "Our 300-seater Event Hall and beautiful open-air reception space provide the ideal backdrop. With reliable power, serene surroundings, and flexible seating arrangements",
+        "gallery": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Restaurant",
+        "tagline": "A Taste of Home",
+        "tagline-description": "Our in-house restaurant offers delicious, freshly prepared meals — from local favorites to continental classics.",
+        "gallery": [
+            "image1",
+            "image2",
+            "image3",
+            "image4"
+        ]
+    },
+]
