@@ -2,7 +2,7 @@ import Spaces from "../../components/Spaces";
 import Footer from "../../Footer";
 
 import room1Img from "../../assets/room1.jpg";
-import room2Img from "../../assets/room2.jpg";
+import room2Img from "../../assets/room2.jpg";  
 import room3Img from "../../assets/room3.jpg";
 import room4Img from "../../assets/room4.jpg";
 
