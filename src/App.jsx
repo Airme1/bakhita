@@ -1,4 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import NavBar from './components/Navbar';
+import Home from './pages/Home';
+import Room from './pages/Room';
+import NotFound from './pages/NotFound';
+import Footer from './components/Footer';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
@@ -9,7 +14,7 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <RouterProvider router={router} />
       <Footer />
     </>
