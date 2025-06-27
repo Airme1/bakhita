@@ -1,15 +1,15 @@
-export default function Navbar(){
-    return (
-        <nav className="flex justify-between items-center h-15 px-15 border-solid border-amber-50 border-1">
-            <h3 className="text-2xl font-bold">Bakhita Pastoral Center</h3>
-            <div className="w-1/2">
-                <ul className="flex justify-around text-xl">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Our Services</li>
-                    <li className="bg-black text-amber-50 py-1 px-5 rounded-4xl">Book Now</li>
-                </ul>
-            </div>
-        </nav>
-    )
+export default function Navbar() {
+  return (
+    <nav className='layout-pad py-4 flex justify-between items-center border-b-primary/20 border-1'>
+      <h1 className='text-2xl font-bold'>Bakhita Pastoral Center</h1>
+      <div className='flex gap-6 items-center'>
+        <div>Home</div>
+        <div>About</div>
+        <div>Our Services</div>
+        <button className='bg-[#0e0e0e] text-white px-4 py-2 rounded-full'>
+          Book Now
+        </button>
+      </div>
+    </nav>
+  );
 }
