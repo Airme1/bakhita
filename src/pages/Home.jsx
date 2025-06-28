@@ -304,7 +304,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className='layout-pad mt-32'>
+      <section className='layout-pad mt-32 mb-20'>
         <div className='text-center mb-8 lg:text-left lg:max-w-[55%]'>
           <h2 className='font-bold text-4xl'>We're here to help</h2>
           <p className='text-sm mt-4'>
