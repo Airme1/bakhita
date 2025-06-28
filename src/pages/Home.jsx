@@ -1,7 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import HeroImage from '../assets/topViewHotel.png';
+import contactImg from '../assets/contactImg.png';
 import { Icon } from '@iconify/react';
 import rooms from '../assets/data/rooms.json';
+import emailIcon from '../assets/icons/email.svg';
+import phoneIcon from '../assets/icons/phone.svg';
+import addressIcon from '../assets/icons/address.svg';
 import facilities from '../assets/data/facilities.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -66,7 +70,7 @@ export default function Home() {
       {/* Hero Section */}
       <section>
         <div className='layout-pad mt-[5%] mb-16 text-center lg:max-w-[70%] xl:max-w-[65%] mx-auto'>
-          <h1 className='font-bold text-6xl mb-4'>
+          <h1 className='font-bold text-4xl md:text-6xl mb-4'>
             Welcome to Bakhita Pastoral Center
           </h1>
           <p>
@@ -295,6 +299,53 @@ export default function Home() {
             <p className='text-sm font-light'>
               Your safety is guaranteed with our 24/7 security systems.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className='layout-pad mt-32'>
+        <div className='text-center mb-8 lg:text-left lg:max-w-[55%]'>
+          <h2 className='font-bold text-4xl'>We're here to help</h2>
+          <p className='text-sm mt-4'>
+            Ready to book? Whether you're planning an event, retreat, or
+            extended stay, we're here to help. Call or WhatsApp us today to
+            reserve your space—rooms, halls, and services are available, and
+            early booking is highly recommended due to high demand.
+          </p>
+        </div>
+
+        <div className='lg:flex lg:justify-between items-center lg:gap-16 xl:gap-28'>
+          <div className='md:w-[60%] mx-auto lg:w-full xl:max-w-[40%]'>
+            <div className='bg-primary/15 flex items-center gap-6 py-3 px-6 rounded-full mb-4'>
+              <img src={emailIcon} alt='Email Icon' />
+              <div>
+                <div className='font-medium mb-2'>Email</div>
+                <div className='text-sm'>info@bakhitapastoralcentre.com</div>
+              </div>
+            </div>
+            <div className='bg-primary/15 flex items-center gap-6 py-3 px-6 rounded-full mb-4'>
+              <img src={phoneIcon} alt='Phone Icon' />
+              <div>
+                <div className='font-medium mb-2'>Phone</div>
+                <div className='text-sm'>+234 817 006 1600</div>
+              </div>
+            </div>
+            <div className='bg-primary/15 flex items-center gap-6 py-3 px-6 rounded-full mb-2'>
+              <img src={addressIcon} alt='Address Icon' />
+              <div>
+                <div className='font-medium mb-2'>Address</div>
+                <div className='text-sm'>456 Bakhita way, Sokoto, Nigeria</div>
+              </div>
+            </div>
+          </div>
+
+          <div className='hidden lg:block'>
+            <img
+              src={contactImg}
+              alt='Location'
+              className='h-full w-auto rounded-2xl'
+            />
           </div>
         </div>
       </section>
