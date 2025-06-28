@@ -170,6 +170,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
       <section className='layout-pad mt-32'>
         <h2 className='font-bold text-4xl text-center'>
           Proven Track of Satisfied Clients
@@ -177,7 +178,7 @@ export default function Home() {
         <p className='text-center mt-2'>See what our clients are saying</p>
 
         <div className='flex flex-wrap gap-8 items-stretch mt-8'>
-          <div className='bg-white border-primary/30 rounded-xl border flex flex-col justify-between py-6 px-4 flex-1 md:min-w-[350px] gap-4'>
+          <div className='bg-white border-primary/30 rounded-2xl border flex flex-col justify-between py-6 px-4 flex-1 md:min-w-[320px] gap-4'>
             <Icon icon='el:quote-alt' className='text-accent text-3xl' />
             <div>
               <div className='font-semibold text-lg'>
@@ -195,7 +196,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='bg-white border-primary/30 rounded-xl border flex flex-col justify-between py-6 px-4 flex-1 md:min-w-[350px] gap-4'>
+          <div className='bg-white border-primary/30 rounded-2xl border flex flex-col justify-between py-6 px-4 flex-1 md:min-w-[320px] gap-4'>
             <Icon icon='el:quote-alt' className='text-accent text-3xl' />
             <div>
               <div className='font-semibold text-lg'>
@@ -213,7 +214,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='bg-white border-primary/30 rounded-xl border flex flex-col justify-between py-6 px-4 flex-1 md:min-w-[350px] gap-4'>
+          <div className='bg-white border-primary/30 rounded-2xl border flex flex-col justify-between py-6 px-4 flex-1 md:min-w-[320px] gap-4'>
             <Icon icon='el:quote-alt' className='text-accent text-3xl' />
             <div>
               <div className='font-semibold text-lg'>
@@ -231,6 +232,69 @@ export default function Home() {
               <div className='font-medium'>- Paulina</div>
               <div className='font-light text-sm'>Event Planner</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='layout-pad mt-32'>
+        <h2 className='font-bold text-4xl text-center'>
+          Designed For Your Comfort
+        </h2>
+        <p className='text-center mt-2'>
+          Every detail is thoughtfully arranged to make your stay smooth,
+          secure, and stress-free.
+        </p>
+
+        <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:max-w-[90%] mx-auto'>
+          {/* Electricity */}
+          <div className='flex flex-col items-center text-center gap-3'>
+            <Icon
+              icon='healthicons:electricity-outline'
+              className='text-primary text-5xl'
+            />
+            <h3 className='text-xl md:text-2xl font-bold'>
+              24 Hour Electricity
+            </h3>
+            <p className='text-sm font-light'>
+              Reliable power supply around the clock for your comfort.
+            </p>
+          </div>
+
+          {/* Parking */}
+          <div className='flex flex-col items-center text-center gap-3'>
+            <Icon
+              icon='hugeicons:car-parking-01'
+              className='text-primary text-5xl'
+            />
+            <h3 className='text-xl md:text-2xl font-bold'>Private Parking</h3>
+            <p className='text-sm font-light'>
+              Enjoy hassle-free parking at no extra cost.
+            </p>
+          </div>
+
+          {/* Internet */}
+          <div className='flex flex-col items-center text-center gap-3'>
+            <Icon icon='uiw:wifi' className='text-primary text-5xl' />
+            <h3 className='text-xl md:text-2xl font-bold'>
+              High Speed Internet
+            </h3>
+            <p className='text-sm font-light'>
+              Stay connected seamlessly across our spaces.
+            </p>
+          </div>
+
+          {/* Security */}
+          <div className='flex flex-col items-center text-center gap-3'>
+            <Icon
+              icon='hugeicons:security-lock'
+              className='text-primary text-5xl'
+            />
+            <h3 className='text-xl md:text-2xl font-bold'>
+              Top-notch Security
+            </h3>
+            <p className='text-sm font-light'>
+              Your safety is guaranteed with our 24/7 security systems.
+            </p>
           </div>
         </div>
       </section>
