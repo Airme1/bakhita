@@ -7,13 +7,29 @@
     "headline": "More than a Room",
     "details": "Comfort meets simplicity. Our Standard Room offers everything you need for a peaceful stay — clean, cozy, and budget-friendly without compromising quality.",
     "amenities": [
-      { "King Size Bed": "fluent:bed-24-regular" },
-      { "Room Service": "material-symbols:room-service-outline" },
-      { "Fully Air Conditioned": "mingcute:air-condition-open-line" },
-      { "Study Table": "lucide-lab:desk-lamp" },
-      { "35inch Flat Screen TV": "ic:outline-tv" }
+      {
+        "King Size Bed": "fluent:bed-24-regular"
+      },
+      {
+        "Room Service": "material-symbols:room-service-outline"
+      },
+      {
+        "Fully Air Conditioned": "mingcute:air-condition-open-line"
+      },
+      {
+        "Study Table": "lucide-lab:desk-lamp"
+      },
+      {
+        "35inch Flat Screen TV": "ic:outline-tv"
+      }
     ],
-    "images": ["image1", "image2", "image3", "image4"]
+    "images": [
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room1.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room2.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room3.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room4.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room5.jpg"
+    ]
   },
   {
     "id": 2,
@@ -23,13 +39,28 @@
     "headline": "Luxury, Privacy, and Peace of Mind - All in One",
     "details": "A step up in space and style. The Deluxe Room gives you extra comfort, elegant furnishing, and a relaxed ambiance for both work and rest.",
     "amenities": [
-      { "King Size Bed": "fluent:bed-24-regular" },
-      { "Room Service": "material-symbols:room-service-outline" },
-      { "Fully Air Conditioned": "mingcute:air-condition-open-line" },
-      { "Study Table": "lucide-lab:desk-lamp" },
-      { "35inch Flat Screen TV": "ic:outline-tv" }
+      {
+        "King Size Bed": "fluent:bed-24-regular"
+      },
+      {
+        "Room Service": "material-symbols:room-service-outline"
+      },
+      {
+        "Fully Air Conditioned": "mingcute:air-condition-open-line"
+      },
+      {
+        "Study Table": "lucide-lab:desk-lamp"
+      },
+      {
+        "35inch Flat Screen TV": "ic:outline-tv"
+      }
     ],
-    "images": ["image1", "image2", "image3", "image4"]
+    "images": [
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room1.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room2.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room3.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-suite/room4.jpg"
+    ]
   },
   {
     "id": 3,
@@ -39,13 +70,28 @@
     "headline": "Everything You Need for a Peaceful Night’s Rest",
     "details": "Designed for travelers who love a little more room. The Luxury Double features spacious bedding, refined decor, and the perfect atmosphere for couples or solo guests wanting extra comfort.",
     "amenities": [
-      { "King Size Bed": "fluent:bed-24-regular" },
-      { "Room Service": "material-symbols:room-service-outline" },
-      { "Fully Air Conditioned": "mingcute:air-condition-open-line" },
-      { "Study Table": "lucide-lab:desk-lamp" },
-      { "35inch Flat Screen TV": "ic:outline-tv" }
+      {
+        "King Size Bed": "fluent:bed-24-regular"
+      },
+      {
+        "Room Service": "material-symbols:room-service-outline"
+      },
+      {
+        "Fully Air Conditioned": "mingcute:air-condition-open-line"
+      },
+      {
+        "Study Table": "lucide-lab:desk-lamp"
+      },
+      {
+        "35inch Flat Screen TV": "ic:outline-tv"
+      }
     ],
-    "images": ["image1", "image2", "image3", "image4"]
+    "images": [
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-standard/room1.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-standard/room2.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-standard/room3.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-standard/room4.jpg"
+    ]
   },
   {
     "id": 4,
@@ -55,13 +101,28 @@
     "headline": "Spacious Comfort for Two, or Just for You",
     "details": "Experience more than a room — enjoy a private suite that offers a living area, elegant furnishings, and an elevated sense of space and privacy for extended stays or special visits.",
     "amenities": [
-      { "King Size Bed": "fluent:bed-24-regular" },
-      { "Room Service": "material-symbols:room-service-outline" },
-      { "Fully Air Conditioned": "mingcute:air-condition-open-line" },
-      { "Study Table": "lucide-lab:desk-lamp" },
-      { "35inch Flat Screen TV": "ic:outline-tv" }
+      {
+        "King Size Bed": "fluent:bed-24-regular"
+      },
+      {
+        "Room Service": "material-symbols:room-service-outline"
+      },
+      {
+        "Fully Air Conditioned": "mingcute:air-condition-open-line"
+      },
+      {
+        "Study Table": "lucide-lab:desk-lamp"
+      },
+      {
+        "35inch Flat Screen TV": "ic:outline-tv"
+      }
     ],
-    "images": ["image1", "image2", "image3", "image4"]
+    "images": [
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-luxury/room1.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-luxury/room2.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-luxury/room3.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-luxury/room4.jpg"
+    ]
   },
   {
     "id": 5,
@@ -71,12 +132,26 @@
     "headline": "Designed for Comfort, Styled for Ease",
     "details": "Our finest offering. The Executive Suite is tailored for distinguished guests who desire luxury, tranquility, and class — complete with a separate lounge, refined décor, and top-tier amenities.",
     "amenities": [
-      { "King Size Bed": "fluent:bed-24-regular" },
-      { "Room Service": "material-symbols:room-service-outline" },
-      { "Fully Air Conditioned": "mingcute:air-condition-open-line" },
-      { "Study Table": "lucide-lab:desk-lamp" },
-      { "35inch Flat Screen TV": "ic:outline-tv" }
+      {
+        "King Size Bed": "fluent:bed-24-regular"
+      },
+      {
+        "Room Service": "material-symbols:room-service-outline"
+      },
+      {
+        "Fully Air Conditioned": "mingcute:air-condition-open-line"
+      },
+      {
+        "Study Table": "lucide-lab:desk-lamp"
+      },
+      {
+        "35inch Flat Screen TV": "ic:outline-tv"
+      }
     ],
-    "images": ["image1", "image2", "image3", "image4"]
+    "images": [
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-deluxe/room1.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-deluxe/room2.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/room-deluxe/room3.jpg"
+    ]
   }
 ]
