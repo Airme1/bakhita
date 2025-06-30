@@ -4,7 +4,7 @@
     "name": "Computer Center",
     "headline": "Empowering Minds through Modern Tools",
     "details": "Our fully equipped ICT Centre is designed for training, workshops, and research. Whether you're hosting a digital skills seminar or facilitating online courses, our 50-capacity tech-friendly hall offers fast internet, modern systems, and a conducive learning environment.",
-    "gallery": [
+    "images": [
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/computer-center/computer1.jpg",
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/computer-center/computer2.jpg",
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/computer-center/computer3.jpg",
@@ -16,7 +16,7 @@
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/computer-center/computer9.jpg",
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/computer-center/computer10.jpg",
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/computer-center/computer11.jpg",
-      "https://ik.imagekit.io/rmhnagyqw/Bakhita/computer-center/computer12.jpg",
+      "https://ik.imagekit.io/rmhnagyqw/Bakhita/computer-center/computer12.jpg"
     ]
   },
   {
@@ -24,7 +24,7 @@
     "name": "Event Hall",
     "headline": "Where Every Event Finds its Perfect Stage",
     "details": "Our 300-seater Event Hall and beautiful open-air reception space provide the ideal backdrop. With reliable power, serene surroundings, and flexible seating arrangements",
-    "gallery": [
+    "images": [
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/hall/hall1.jpg",
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/hall/hall2.jpg",
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/hall/hall3.jpg",
@@ -36,7 +36,7 @@
     "name": "Restaurant",
     "headline": "A Taste of Home",
     "details": "Our in-house restaurant offers delicious, freshly prepared meals — from local favorites to continental classics.",
-    "gallery": [
+    "images": [
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/restaurant/restaurant1.jpg",
       "https://ik.imagekit.io/rmhnagyqw/Bakhita/restaurant/restaurant2.jpg"
     ]
