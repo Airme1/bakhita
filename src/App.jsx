@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import NavBar from './components/Navbar';
 import Home from './pages/Home';
 import Room from './pages/Room';
 import NotFound from './pages/NotFound';
@@ -14,7 +13,6 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
-      <NavBar />
       <RouterProvider router={router} />
       <Footer />
     </>

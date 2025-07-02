@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import NavBar from '../components/Navbar';
 import HeroImage from '../assets/topViewHotel.png';
 import contactImg from '../assets/contactImg.png';
 import { Icon } from '@iconify/react';
@@ -67,6 +68,7 @@ export default function Home() {
 
   return (
     <main>
+      <NavBar />
       {/* Hero Section */}
       <section>
         <div className='layout-pad mt-[5%] mb-16 text-center lg:max-w-[70%] xl:max-w-[65%] mx-auto'>
