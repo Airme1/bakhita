@@ -84,6 +84,23 @@ export default function Room() {
             />
           </div>
         </div>
+        <div className='mt-6 pl-[5%] xl:pl-[8%] flex'>
+          <Swiper
+            modules={[Navigation]}
+            spaceBetween={30}
+            slidesPerView={2.5}
+            loop={false}>
+            {room.images.map((img, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={img}
+                  alt='RoomImage'
+                  className='w-full h-96 rounded-xl mb-3 object-cover'
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </section>
     </main>
   );

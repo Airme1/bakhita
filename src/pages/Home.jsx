@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar';
 import HeroImage from '../assets/topViewHotel.png';
 import contactImg from '../assets/contactImg.png';
@@ -123,7 +124,11 @@ export default function Home() {
                     alt=''
                     className='w-full h-96 rounded-xl mb-3 object-cover'
                   />
-                  <div className='text-lg font-semibold mb-1'>{room.name}</div>
+                  <Link to={`/room/${room.id}`}>
+                    <div className='text-lg font-semibold mb-1'>
+                      {room.name}
+                    </div>
+                  </Link>
                   <p className='text-sm text-gray-600'>{room.price}</p>
                 </div>
               </SwiperSlide>
