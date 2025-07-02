@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
-  { path: '/room', element: <Room /> },
+  { path: '/room/:id', element: <Room /> },
   { path: '*', element: <NotFound /> },
 ]);
 
