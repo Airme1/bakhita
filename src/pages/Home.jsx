@@ -2,7 +2,6 @@ import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar';
 import HeroImage from '../assets/topViewHotel.png';
-import contactImg from '../assets/contactImg.png';
 import { Icon } from '@iconify/react';
 import rooms from '../assets/data/rooms.json';
 import emailIcon from '../assets/icons/email.svg';
@@ -349,7 +348,7 @@ export default function Home() {
 
           <div className='hidden lg:block'>
             <img
-              src={contactImg}
+              src={HeroImage}
               alt='Location'
               className='h-full w-auto rounded-2xl'
             />
