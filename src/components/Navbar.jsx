@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +16,19 @@ export default function Navbar() {
       }`}>
       <h1 className='text-2xl font-bold'>Bakhita Pastoral Center</h1>
       <div className='lg:flex gap-12 items-center hidden'>
-        <Link to={'/'}>Home</Link>
+        <NavLink
+          to={'/'}
+          className={({ isActive }) =>
+            isActive ? 'font-semibold text-lg' : ''
+          }>
+          Home
+        </NavLink>
         <div>About</div>
-        <div>Our Services</div>
+        <a
+          href='#services'
+          className='cursor-pointer hover:text-primary hover:font-semibold'>
+          Our Services
+        </a>
         <button
           className={` text-white px-4 py-2 rounded-full ${
             isRoomPage ? 'bg-primary' : 'bg-[#0e0e0e]'

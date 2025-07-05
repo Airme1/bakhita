@@ -1,4 +1,5 @@
 import NavBar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { useParams } from 'react-router-dom';
 import rooms from '../assets/data/rooms.json';
 import { useState, useEffect, useRef } from 'react';
@@ -140,6 +141,8 @@ export default function Room() {
           </Swiper>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }

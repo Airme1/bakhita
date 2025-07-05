@@ -1,7 +1,9 @@
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar';
+import Footer from '../components/Footer';
 import HeroImage from '../assets/topViewHotel.png';
+import ContactImage from '../assets/contactImg.jpg';
 import { Icon } from '@iconify/react';
 import rooms from '../assets/data/rooms.json';
 import emailIcon from '../assets/icons/email.svg';
@@ -69,6 +71,7 @@ export default function Home() {
   return (
     <main>
       <NavBar />
+
       {/* Hero Section */}
       <section>
         <div className='layout-pad mt-[5%] mb-16 text-center lg:max-w-[70%] xl:max-w-[65%] mx-auto'>
@@ -91,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* Rooms Section */}
-      <section className='mt-16'>
+      <section id='services' className='mt-16'>
         <div className='layout-pad flex justify-between items-center'>
           <h2 className='font-bold text-4xl'>Our Rooms</h2>
           <div className='flex gap-4 items-center text-primary text-4xl'>
@@ -373,13 +376,15 @@ export default function Home() {
 
           <div className='hidden lg:block'>
             <img
-              src={HeroImage}
+              src={ContactImage}
               alt='Location'
               className='h-full w-auto rounded-2xl'
             />
           </div>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }

@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import Room from './pages/Room';
 import NotFound from './pages/NotFound';
-import Footer from './components/Footer';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
@@ -14,7 +13,6 @@ export default function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <Footer />
     </>
   );
 }
