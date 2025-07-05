@@ -9,7 +9,7 @@ import phoneIcon from '../assets/icons/phone.svg';
 import addressIcon from '../assets/icons/address.svg';
 import facilities from '../assets/data/facilities.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -110,26 +110,23 @@ export default function Home() {
 
         <div className='mt-6 pl-[5%] xl:pl-[8%] flex'>
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={30}
             slidesPerView={2.5}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
             loop={false}
             onSwiper={(swiper) => (roomSwiperRef.current = swiper)}>
             {rooms.map((room, index) => (
               <SwiperSlide key={index}>
-                <div>
+                <Link to={`/room/${room.id}`}>
                   <img
                     src={room.images[0]}
                     alt=''
                     className='w-full h-96 rounded-xl mb-3 object-cover'
                   />
-                  <Link to={`/room/${room.id}`}>
-                    <div className='text-lg font-semibold mb-1'>
-                      {room.name}
-                    </div>
-                  </Link>
+                  <div className='text-lg font-semibold mb-1'>{room.name}</div>
                   <p className='text-sm text-gray-600'>{room.price}</p>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

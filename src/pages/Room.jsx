@@ -7,6 +7,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Icon } from '@iconify/react';
+import Autoplay from 'embla-carousel-autoplay';
 
 export default function Room() {
   const { id } = useParams();
@@ -70,7 +71,7 @@ export default function Room() {
         </div>
       </section>
 
-      <section>
+      <section className='mb-40'>
         <div className='layout-pad flex justify-between items-center mt-20'>
           <h2 className='text-4xl font-bold'>Gallery</h2>
           <div className='flex gap-4 items-center text-primary text-4xl'>
@@ -86,9 +87,10 @@ export default function Room() {
         </div>
         <div className='mt-6 pl-[5%] xl:pl-[8%] flex'>
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={30}
             slidesPerView={2.5}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
             loop={false}>
             {room.images.map((img, index) => (
               <SwiperSlide key={index}>
