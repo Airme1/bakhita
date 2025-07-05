@@ -115,6 +115,20 @@ export default function Home() {
             slidesPerView={2.5}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
             loop={false}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.1,
+              },
+              640: {
+                slidesPerView: 1.5,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2.5,
+              },
+            }}
             onSwiper={(swiper) => (roomSwiperRef.current = swiper)}>
             {rooms.map((room, index) => (
               <SwiperSlide key={index}>
@@ -157,6 +171,20 @@ export default function Home() {
             spaceBetween={30}
             slidesPerView={2.5}
             loop={false}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.1,
+              },
+              640: {
+                slidesPerView: 1.5,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2.5,
+              },
+            }}
             onSwiper={(swiper) => (facilitySwiperRef.current = swiper)}>
             {facilities.map((facility, index) => (
               <SwiperSlide key={index}>

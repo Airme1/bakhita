@@ -113,6 +113,20 @@ export default function Room() {
             slidesPerView={2.5}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             loop={false}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.1,
+              },
+              640: {
+                slidesPerView: 1.5,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2.5,
+              },
+            }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}>
             {room.images.map((img, index) => (
               <SwiperSlide key={index}>
