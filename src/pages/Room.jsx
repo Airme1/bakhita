@@ -1,13 +1,12 @@
 import NavBar from '../components/Navbar';
 import { useParams } from 'react-router-dom';
 import rooms from '../assets/data/rooms.json';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Icon } from '@iconify/react';
-import Autoplay from 'embla-carousel-autoplay';
 
 export default function Room() {
   const { id } = useParams();
@@ -15,9 +14,12 @@ export default function Room() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const swiperRef = useRef(null);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   useEffect(() => {
     try {
-      // Find room by ID (convert id to number for comparison)
       const selectedRoom = rooms.find((item) => item.id === parseInt(id));
       if (!selectedRoom) {
         throw new Error('Room not found');
@@ -28,9 +30,29 @@ export default function Room() {
       setError(err.message);
       setLoading(false);
     }
-  }, [id]); // Re-run when id changes
+  }, [id]);
 
-  // JSX rendering
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const swiper = swiperRef.current;
+      if (
+        swiper &&
+        prevRef.current &&
+        nextRef.current &&
+        swiper.params?.navigation
+      ) {
+        swiper.params.navigation.prevEl = prevRef.current;
+        swiper.params.navigation.nextEl = nextRef.current;
+        swiper.navigation.destroy();
+        swiper.navigation.init();
+        swiper.navigation.update();
+        clearInterval(interval);
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
@@ -39,13 +61,10 @@ export default function Room() {
       <header
         className='relative bg-cover bg-center text-white'
         style={{ backgroundImage: `url(${room.images[0]})` }}>
-        {/* Overlay */}
         <div className='absolute inset-0 bg-black/70'></div>
-
         <div className='relative'>
           <NavBar />
         </div>
-
         <div className='relative z-10 text-center py-[30vh]'>
           <h1 className='text-5xl font-bold mb-2'>{room.name}</h1>
           <p>{room.price}</p>
@@ -78,10 +97,12 @@ export default function Room() {
             <Icon
               icon='solar:round-arrow-left-line-duotone'
               className='cursor-pointer'
+              ref={prevRef}
             />
             <Icon
               icon='solar:round-arrow-right-line-duotone'
               className='cursor-pointer'
+              ref={nextRef}
             />
           </div>
         </div>
@@ -90,8 +111,9 @@ export default function Room() {
             modules={[Navigation, Autoplay]}
             spaceBetween={30}
             slidesPerView={2.5}
-            autoplay={{ delay: 2000, disableOnInteraction: false }}
-            loop={false}>
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            loop={false}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}>
             {room.images.map((img, index) => (
               <SwiperSlide key={index}>
                 <img
