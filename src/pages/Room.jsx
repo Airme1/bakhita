@@ -130,21 +130,27 @@ export default function Room() {
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={30}
-            slidesPerView={2.5}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
-            loop={false}
+            slidesPerView={room.images.length < 3 ? room.images.length : 2.5}
+            autoplay={
+              room.images.length > 1
+                ? { delay: 4000, disableOnInteraction: false }
+                : false
+            }
+            loop={room.images.length > 2}
             breakpoints={{
               0: {
                 slidesPerView: 1.1,
               },
               640: {
-                slidesPerView: 1.5,
+                slidesPerView:
+                  room.images.length < 2 ? room.images.length : 1.5,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: room.images.length < 2 ? room.images.length : 2,
               },
               1024: {
-                slidesPerView: 2.5,
+                slidesPerView:
+                  room.images.length < 3 ? room.images.length : 2.5,
               },
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}>
