@@ -19,16 +19,18 @@ export default function Navbar() {
       <h1 className='text-2xl font-bold'>Bakhita Pastoral Center</h1>
       <div className='lg:flex gap-12 items-center hidden'>
         <NavLink
-          to={'/'}
+          to='/'
           className={({ isActive }) =>
-            isActive ? 'font-semibold text-lg' : ''
+            `cursor-pointer hover:text-accent hover:font-semibold ${
+              isActive ? 'font-semibold text-lg' : ''
+            }`
           }>
           Home
         </NavLink>
         <div>About</div>
         <NavLink
           to='/#services'
-          className='cursor-pointer hover:text-primary hover:font-semibold'>
+          className='cursor-pointer hover:text-accent hover:font-semibold'>
           Our Services
         </NavLink>
         <button
