@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
 export default function Footer() {
@@ -11,9 +12,9 @@ export default function Footer() {
         </div>
 
         <div className='flex gap-4 mt-8'>
-          <div>Home</div>
+          <NavLink to='/'>Home</NavLink>
           <div>About</div>
-          <div>Services</div>
+          <NavLink to='/#services'>Services</NavLink>
           <div>Gallery</div>
         </div>
 
@@ -36,9 +37,9 @@ export default function Footer() {
             <h4 className='text-5xl'>Pastoral Center</h4>
           </div>
           <div className='flex gap-4 mt-8'>
-            <div>Home</div>
+            <NavLink to='/'>Home</NavLink>
             <div>About</div>
-            <div>Services</div>
+            <NavLink to='/#services'>Services</NavLink>
             <div>Gallery</div>
           </div>
         </div>

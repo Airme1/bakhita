@@ -2,6 +2,7 @@ import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useParams } from 'react-router-dom';
 import rooms from '../assets/data/rooms.json';
+import facilities from '../assets/data/facilities.json';
 import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
@@ -10,7 +11,7 @@ import 'swiper/css/navigation';
 import { Icon } from '@iconify/react';
 
 export default function Room() {
-  const { id } = useParams();
+  const { type, id } = useParams();
   const [room, setRoom] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -20,18 +21,34 @@ export default function Room() {
   const nextRef = useRef(null);
 
   useEffect(() => {
-    try {
-      const selectedRoom = rooms.find((item) => item.id === parseInt(id));
-      if (!selectedRoom) {
-        throw new Error('Room not found');
+    if (type === 'room') {
+      try {
+        const selectedRoom = rooms.find((item) => item.id === parseInt(id));
+        if (!selectedRoom) {
+          throw new Error('Room not found');
+        }
+        setRoom(selectedRoom);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
       }
-      setRoom(selectedRoom);
-      setLoading(false);
-    } catch (err) {
-      setError(err.message);
-      setLoading(false);
+    } else if (type === 'facility') {
+      try {
+        const selectedRoom = facilities.find(
+          (item) => item.id === parseInt(id)
+        );
+        if (!selectedRoom) {
+          throw new Error('Facility not found');
+        }
+        setRoom(selectedRoom);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
     }
-  }, [id]);
+  }, [id, type]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -68,7 +85,7 @@ export default function Room() {
         </div>
         <div className='relative z-10 text-center py-[30vh]'>
           <h1 className='text-5xl font-bold mb-2'>{room.name}</h1>
-          <p>{room.price}</p>
+          {room.price && <p>{room.price}</p>}
         </div>
       </header>
 
@@ -76,19 +93,21 @@ export default function Room() {
         <h2 className='font-semibold text-2xl mb-2'>{room.headline}</h2>
         <p>{room.details}</p>
 
-        <div className='mt-4 flex flex-wrap gap-6'>
-          {room.amenities.map((item, index) => {
-            const [label, icon] = Object.entries(item)[0];
-            return (
-              <div
-                key={index}
-                className='flex gap-4 items-center border-primary/40 border rounded-xl px-4 py-3'>
-                <Icon icon={icon} className='text-3xl text-primary' />
-                <span>{label}</span>
-              </div>
-            );
-          })}
-        </div>
+        {room.amenities && (
+          <div className='mt-4 flex flex-wrap gap-6'>
+            {room.amenities.map((item, index) => {
+              const [label, icon] = Object.entries(item)[0];
+              return (
+                <div
+                  key={index}
+                  className='flex gap-4 items-center border-primary/40 border rounded-xl px-4 py-3'>
+                  <Icon icon={icon} className='text-3xl text-primary' />
+                  <span>{label}</span>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </section>
 
       <section className='mb-40'>

@@ -5,7 +5,9 @@ import { useLocation, NavLink } from 'react-router-dom';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const isRoomPage = location.pathname.includes('/room');
+  const isRoomPage =
+    location.pathname.includes('/room') ||
+    location.pathname.includes('/facility');
 
   return (
     <nav
@@ -24,11 +26,11 @@ export default function Navbar() {
           Home
         </NavLink>
         <div>About</div>
-        <a
-          href='#services'
+        <NavLink
+          to='/#services'
           className='cursor-pointer hover:text-primary hover:font-semibold'>
           Our Services
-        </a>
+        </NavLink>
         <button
           className={` text-white px-4 py-2 rounded-full ${
             isRoomPage ? 'bg-primary' : 'bg-[#0e0e0e]'

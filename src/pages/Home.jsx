@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrolltoTop';
 import HeroImage from '../assets/topViewHotel.png';
 import ContactImage from '../assets/contactImg.jpg';
 import { Icon } from '@iconify/react';
@@ -70,6 +71,7 @@ export default function Home() {
 
   return (
     <main>
+      <ScrollToTop />
       <NavBar />
 
       {/* Hero Section */}
@@ -191,7 +193,7 @@ export default function Home() {
             onSwiper={(swiper) => (facilitySwiperRef.current = swiper)}>
             {facilities.map((facility, index) => (
               <SwiperSlide key={index}>
-                <div>
+                <Link to={`/facility/${facility.id}`}>
                   <img
                     src={facility.images[0]}
                     alt={facility.name}
@@ -201,7 +203,7 @@ export default function Home() {
                     {facility.name}
                   </div>
                   <p className='text-sm text-gray-600'>{facility.headline}</p>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
