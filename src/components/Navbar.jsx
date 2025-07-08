@@ -16,7 +16,7 @@ export default function Navbar() {
           ? 'text-white border-b border-b-primary/80'
           : 'text-black border-b border-b-primary/20'
       }`}>
-      <h1 className='text-2xl font-bold'>Bakhita Pastoral Center</h1>
+      <h1 className='text-xl md:text-2xl font-bold'>Bakhita Pastoral Center</h1>
       <div className='lg:flex gap-12 items-center hidden'>
         <NavLink
           to='/'
